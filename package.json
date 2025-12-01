@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "scripts": {
+    "demo": "node src/main.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    },
+  "devDependencies": {
+    "jest-environment-node": "^30.2.0",
+    "jest": "^30.2.0",
+    "vitest": "^4.0.14"
+  }
+}
