@@ -1,18 +1,12 @@
 {
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
     "demo": "node src/main.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
-    },
+   },
   "devDependencies": {
-    "jest-environment-node": "^30.2.0",
-=======
-    "test": "jest"
-  },
-  "devDependencies": {
->>>>>>> 2966cd1a830f0753e54a638a32d9010b6564cc7e
-    "jest": "^30.2.0",
+     "jest": "^30.2.0",
+     "jest-environment-node": "^30.2.0",
     "vitest": "^4.0.14"
   }
 }

@@ -1,4 +1,4 @@
-import { LinkedList } from "./src/linked-list-class.js";
+import { LinkedList } from "./linked-list-class.js";
 
 const list = new LinkedList();
 
