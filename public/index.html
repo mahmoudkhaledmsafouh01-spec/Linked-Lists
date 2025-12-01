@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linked List Demo</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    #output { margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Linked List Demo</h1>
+
+  <input id="value" placeholder="Value" />
+  <button id="append">Append</button>
+  <button id="prepend">Prepend</button>
+
+  <pre id="output"></pre>
+
+  <script type="module">
+    import { LinkedList } from "../src/linked-list-factory.js";
+
+    const list = LinkedList();
+
+    const valueInput = document.getElementById("value");
+    const output = document.getElementById("output");
+
+    function render() {
+      output.textContent = list.toString();
+    }
+
+    document.getElementById("append").onclick = () => {
+      list.append(valueInput.value);
+      render();
+    };
+
+    document.getElementById("prepend").onclick = () => {
+      list.prepend(valueInput.value);
+      render();
+    };
+
+    render();
+  </script>
+</body>
+</html>
